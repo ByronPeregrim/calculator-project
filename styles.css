@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(80, 78, 78);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#calculatorBox {
+    display: flex;
+    border-style: solid;
+    width: 500px;
+    height: 625px;
+    border-radius: 20px;
+    background-color: rgb(131, 131, 131);
+    flex-direction: column;
+    align-items: center;
+}
+
+#displayBox {
+    display: flex;
+    border-style: solid;
+    width: 425px;
+    height: 120px;
+    margin-top: 30px;
+    background-color: wheat;
+    flex-direction: column;
+    border-width: 2px;
+   
+}
+
+#topBox,
+#bottomBox {
+    display: flex;
+    border-style: soli;
+    height: 60px;
+    justify-content: right;
+    padding-right: 10px;
+    align-items: flex-end;
+    font-size: 25px;
+}
+
+#bottomBox {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+#clearDeleteBox {
+    display: flex;
+    border-style: soli;
+    height: 80px;
+    width: 425px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    justify-content: space-around;
+
+}
+
+.clearDeleteButton {
+    display: flex;
+    border-style: solid;
+    border-color: black;
+    height: 60px;
+    width: 150px;
+    border-width: 2px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    transition: all 0.07s;
+}
+
+#clearButton {
+   background-color: lightcoral;
+
+}
+
+#deleteButton {
+    background-color: lightblue;
+}
+
+#buttonsBox {
+    display: flex;
+    border-style: soli;
+    height: 300px;
+    width: 425px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+.buttons {
+    border-style: solid;
+    height: 50px;
+    width: 75px;
+    border-radius: 30px;
+    border-width: 2px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+    background-color: rgb(173, 173, 173);
+    transition: all 0.07s;
+}
+
+#buttonDiv,
+#buttonX,
+#buttonMinus,
+#buttonPlus,
+#buttonEqual {
+    background-color: orange;
+}
+
+.selected {
+    transform: scale(1.1);
+    border-color: gold;
+    box-shadow: 0 0 10px gold;
+}
